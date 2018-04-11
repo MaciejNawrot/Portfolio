@@ -1,0 +1,827 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Spirax', cursive;*/
+    font-family: 'Concert One', cursive;
+    font-size: 40px;
+}
+
+.desktop-visible {
+    display: none;
+
+}
+
+span{
+    padding: 75px 10% 75px 10%;
+    text-align: center;
+
+}
+
+h1, h2, h3, h3, h5, h6{
+    color: #FFFFFF;
+
+}
+
+.desktop-logo{
+    display: none;
+}
+
+.page-header{
+    position: fixed;
+    width: 100%;
+    padding: 28px 20px 20px 20px;
+    height: 154px;
+    box-sizing: border-box;
+
+    transition: 0.9s ease;
+   /* transition: height 0.9s linear;*/
+}
+
+.page-header.nav-opened{
+    background-color: #334660;
+    height: 70vh;
+    transition: height 0.9s cubic-bezier(1, -0.15, 0, 0.99);
+    /*box-shadow: 0px 6px 15px -1px rgba(0,0,0,0.75);*/
+    box-shadow: -2px -9px 4px 14px rgba(0,0,0,0.75);
+    top: 0;
+   /* transition: height 0.9s linear;*/
+}
+
+
+
+
+
+
+
+.page-header.nav-opened .page-nav .hamburger .hamburger-hamburger{
+    display: none;
+}
+
+.page-header.nav-opened .page-nav .hamburger .hamburger-close{
+    display: block;
+}
+
+.page-header .page-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.page-header .page-nav .hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: transparent;*/
+    top: 53px;
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    right: 40px;
+    background-color: #334660;
+    border: 1px solid #EEEEEE;
+
+    fill: #FFFFFF;
+}
+
+.page-header.nav-opened .page-nav .hamburger{
+    fill: #000000;
+
+}
+
+
+
+
+
+.page-header .page-nav .hamburger .hamburger-hamburger{
+    display: block;
+}
+
+.page-header .page-nav .hamburger .hamburger-close{
+    display: none;
+}
+
+
+.page-header.nav-opened .page-nav .navigation-menu{
+    list-style: none;
+    margin: 0;
+    /*padding: 25px 0 0 0;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 34px;
+    height: 50vh;
+
+
+    /*display: none;*/
+}
+
+
+.page-header .page-nav .navigation-menu{
+    display: none;
+    height: 0;
+
+}
+
+
+
+.page-header .page-nav .navigation-menu li{
+    padding-bottom: 25px;
+    margin: 20px 0 20px 0;
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+.page-header .page-nav .navigation-menu li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.li-text{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+
+
+}
+
+.main .main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    /*background: #626C9E;*/
+    color: #EEEEEE;
+    padding: 152px 0 50px 0;
+    margin: 0;
+    width: 100%;
+    background-image: url("../images/deer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.main .main-header .welcome-text{
+    font-size: 50px;
+    padding: 90px 80px 70px 80px;
+    margin: 0;
+}
+
+.main .main-header .main-header-title{
+    margin: 0;
+    font-size: 50px;
+
+
+}
+
+.main .main-header .main-header-thumb-box{
+
+    padding-bottom: 50px ;
+}
+
+.main .main-header .author-image-box{
+    margin: 0;
+    padding: 0 0 70px 0;
+
+}
+.main .main-header .author-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+hr{
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+.main .main-header .author-name{
+    margin: 0;
+    width: 100%;
+    font-size: 57px;
+
+}
+.main .main-header .author-name::after{
+    content: "";
+    width: 50%;
+    display: block;
+    padding: 50px 25% 0 25%;
+}
+
+.main .main-header .time{
+    width: 100%;
+
+}
+
+.main .section{
+    border-bottom: 1px solid #123123;
+    display: flex;
+    padding-bottom: 75px;
+   /* background-color: #556882; */
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+
+.section-wrapper{
+    background: linear-gradient(#556882, #2D455E);
+}
+
+
+.section-aboutme{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.aboutme-text{
+    display: flex;
+    font-size: 60px;
+}
+
+.section-aboutme img{
+    width: 80%;
+
+}
+
+
+.main .section-education{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .section-education h4{
+    margin: 0;
+    padding: 50px 0 50px 0;
+
+}
+.main .section-education .education-span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    padding: 70px 14% 70px 14%;
+    box-sizing: border-box;
+    min-height: 600px;
+}
+
+.main .section-education .education-span hr{
+    width: 75%;
+
+}
+
+.main .section-education h3{
+    margin-top: 75px;
+    text-align: center;
+
+}
+
+.main .section-education div{
+    text-align: center;
+
+}
+
+.main .section-education img{
+    width: 80%;
+    height: 65%;
+}
+
+.main .section-education figure{
+    text-align: center;
+    padding: 25px 0 25px 0;
+    margin: 0;
+
+}
+
+.main .section-freetime{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.steam-logo{
+    margin-top: 70px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.main .section-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main .section-contact h3{
+    padding: 10px 10vh 10px 10vh;
+
+}
+
+.spotify, .steam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .section-contact .social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    margin-bottom: 10vh;
+    height: 70vh;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #334660;
+    margin: 0;
+    padding: 0;
+    min-height: 10vh;
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+
+
+}
+
+
+@media screen and (min-width: 991px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        /*font-family: 'Spirax', cursive;*/
+        font-family: 'Concert One', cursive;
+        font-size:30px;
+    }
+
+    .mobile-visible{
+        display: none;
+
+    }
+
+    .desktop-visible{
+        display: block;
+    }
+    span{
+        padding: 75px 10% 75px 10%;
+        text-align: center;
+
+    }
+
+    h1, h2, h3, h3, h5, h6{
+        color: #FFFFFF;
+
+    }
+
+    .page-header .desktop-logo{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .page-header .page-logo{
+        display: none;
+    }
+
+    .page-header{
+        position: fixed;
+        width: 100%;
+        /*padding: 28px 20px 20px 20px;*/
+        padding: 0;
+        height: 70px;
+        box-sizing: border-box;
+        background-color: #334660;
+
+    }
+
+    .page-header .page-nav .hamburger{
+        display: none;
+
+    }
+
+    .page-header .page-nav .navigation-menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /*padding: 25px 0 0 0;*/
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 18px;
+        height: 70px;
+        z-index: 5;
+
+
+
+        /*display: none;*/
+    }
+
+
+
+
+    .page-header .page-nav .navigation-menu li{
+        padding: 0 4% 0 4%;
+        opacity: 1;
+        animation: none;
+        margin: 0;
+        /*padding: 0;*/
+
+    }
+
+    .li{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        background-color: #334660;
+        transition: background-color 0.6s ease, border 0.6s ease, color 0.6s ease;
+        color: #000000 !important;
+        border: 0;
+        margin: 0;
+    }
+
+    .li-clicked{
+        transition: background-color 0.6s ease, border 0.6s ease, color 0.6s ease;
+       /* background-color: #152a53;*/
+        background-color: #06203F;
+        margin: 0 10% 0 10%;
+        border: 1px outset #556882;
+        color: #AAAAAA !important;
+    }
+
+    .li-text{
+
+        margin: 0;
+        /*padding: 0;*/
+        color: #AAAAAA;
+        border: 0;
+        -webkit-transition: border 1s ease-out;
+        -moz-transition: border 1s ease-out;
+        -o-transition: border 1s ease-out;
+        transition: border 1s ease-out;
+
+    }
+
+    .li-text:hover{
+        border-bottom: 1px solid #AAAAAA;
+        -webkit-transition: border 1s ease-out;
+        -moz-transition: border 1s ease-out;
+        -o-transition: border 1s ease-out;
+        transition: border 1s ease-out;
+
+    }
+
+    .page-header .page-nav .navigation-menu li a{
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .main{
+
+
+    }
+
+    .main .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 87vh;
+        text-align: center;
+        /*background: #626C9E;*/
+        color: #EEEEEE;
+        padding: 100px 0 50px 0;
+        margin: 0;
+        width: 100%;
+        background-image: url("../images/deer.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    .main-header-title{
+        margin-top: 100px;
+
+    }
+
+    .main .main-header .welcome-text{
+        font-size: 42px;
+        padding: 60px 80px 50px 80px;
+        margin: 0;
+    }
+
+    .main .main-header .main-header-title{
+        font-size: 50px;
+        margin: 0;
+        padding-top:140px;
+
+    }
+
+    .main .main-header .main-header-thumb-box{
+
+        padding-bottom: 50px ;
+    }
+
+    .main .main-header .author-image-box{
+        margin: 0;
+        padding: 0 0 70px 0;
+
+    }
+    .main .main-header .author-image{
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+    }
+
+    hr{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .main .main-header .author-name{
+        margin: 0;
+        width: 100%;
+        font-size: 57px;
+
+    }
+    .main .main-header .author-name::after{
+        content: "";
+        width: 50%;
+        display: block;
+        padding: 50px 25% 0 25%;
+    }
+
+
+    .main .section{
+        border-bottom: 1px solid #123123;
+        /*display: flex;*/
+        /*padding-bottom: 75px;*/
+        /* background-color: #556882; */
+        /*justify-content: center;*/
+        color: #FFFFFF;
+        box-sizing: border-box;
+
+    }
+
+    .section-wrapper{
+        background: linear-gradient(#556882, #2D455E);
+    }
+
+
+    .section-aboutme{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 0 10vh 0 !important;
+        margin: 0;
+        width: 100%;
+    }
+
+    .aboutme-wrapper{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .aboutme-text{
+        display: flex;
+        font-size: 30px;
+    }
+    .section-aboutme figure{
+        margin:0;
+
+    }
+    .section-aboutme .aboutme-photo{
+        /*width: 80%;*/
+        width: 300px;
+        height: 528px;
+        border-radius: 3%;
+    }
+
+    .section-aboutme span{
+        padding: 0;
+        text-align: left;
+
+    }
+
+
+    .main .section-education{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main .section-education h4{
+        margin: 0;
+        padding: 50px 0 50px 0;
+
+    }
+    .main .section-education .education-span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        padding: 70px 10px 70px 10px;
+        box-sizing: border-box;
+        min-height: 600px;
+    }
+
+    .main .section-education .education-span hr{
+        width: 75%;
+
+    }
+
+    .main .section-education h3{
+        margin: 0;
+        padding: 75px 0 25px 0;
+        text-align: center;
+
+    }
+
+    .main .section-education .education-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .main .section-education div{
+        text-align: center;
+
+    }
+
+    .main .section-education .tme, .main .section-education .zut{
+        width: 50%;
+
+    }
+
+    .fig{
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 !important;
+
+    }
+
+    .school-text{
+        margin:0;
+        padding: 8vh 14% 0 14%;
+        height: 450px;
+    }
+
+    .main .section-education img{
+        width: 80%;
+        height: 65%;
+    }
+
+
+    .main .section-education .tme-photo, .main .section-education .zut-photo{
+        width: 500px;
+        height: 350px;
+        border-radius: 10%;
+    }
+
+    .main .section-freetime{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .section-freetime h3{
+        margin:0;
+        padding: 75px 0;
+
+    }
+
+    .steam-logo{
+
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        padding: 100px 0 100px 0;
+
+    }
+
+
+
+    .main .section-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .section-contact h3{
+        margin:0;
+        padding: 75px 0 !important;
+
+    }
+    .freetime-items{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+    .spotify, .steam{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+    }
+
+    .main .section-contact .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        margin-bottom: 10vh;
+        height: 70vh;
+        min-height:620px;
+    }
+
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /*background-color: #334660;*/
+        background-color: #18293f;
+        margin: 0;
+        padding: 0;
+        min-height: 5vh;
+    }
+
+    footer p{
+        margin: 0;
+        padding: 10px;
+        font-size: 20px;
+        color: #AAAAAA;
+
+    }
+
+    footer .footer-img{
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .onhover{
+
+        transition: transform 1s ease;
+
+    }
+
+    .onhover:hover{
+        transform: scale(1.2);
+        transition: transform 1s ease;
+
+    }
+
+
+}
